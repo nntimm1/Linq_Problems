@@ -18,5 +18,11 @@ namespace LINQProblems
 
 
         // -------------------------------- Member Method ---------------------------------
+        public void StringInOrder()
+        {
+            string userInput = "Terrill";
+            var letterOrder = userInput.ToList();
+            var inOrder = letterOrder.OrderBy(c => c.ToString());
+        }
     }
 }
